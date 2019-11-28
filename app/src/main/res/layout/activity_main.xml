@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#CF4747"
+            app:hideOnScroll="true"
+            app:fabCradleRoundedCornerRadius="16dp"
+            app:menu="@menu/bottom_menu"
+            app:navigationIcon="@drawable/burger"
+            app:layout_scrollFlags="scroll|enterAlways"
+            tools:targetApi="lollipop" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@android:color/white"
+            android:src="@drawable/plus"
+            app:backgroundTint="#CF4747"
+            app:backgroundTintMode="add"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bar"
+            app:maxImageSize="32dp"
+            app:rippleColor="@color/white"
+            app:tint="@color/white"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
